@@ -1,0 +1,23 @@
+{
+  "name": "william-lacy-cv",
+  "authors": [
+    "williamlacy <william.lacy@hotmail.co.uk>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11",
+    "jquery.easing": "1.3",
+    "bootstrap": "3.3.4"
+  }
+}
