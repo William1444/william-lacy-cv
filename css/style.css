@@ -120,7 +120,13 @@ span.glyphicon.glyphicon-triangle-bottom {
     padding-top: 1.1em;
     padding-left: 1.6em;
 }
-
+.study-grid ul li a {
+    color: #989998;
+}
+.study-grid ul li a:hover, .study-grid ul li a:focus, .study-grid ul li a:active {
+    color: #78B3AE;
+    text-decoration: none;
+}
 .study-grid .company {
     font-size: 1.0em;
     color: #78B3AE;
@@ -132,6 +138,24 @@ span.glyphicon.glyphicon-triangle-bottom {
 .study-grid .study1 ul li:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    float: left;
+    margin-top: 0.3em;
+    margin-left: -17px;
+    color: #78B3AE;
+    opacity: 0.8;
+}
+.study-grid .study1 .panel-body {
+    padding: 0 0 0 1.6em;
+}
+.study-grid .study1 .panel-body ul li {
+    color: #80898c;
+    font-size: 1.0em;
+    padding-top: 0.8em;
+}
+.study-grid .study1 .panel-body ul li:before {
+    content: "\2212";
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
     float: left;
@@ -183,7 +207,7 @@ span.glyphicon.glyphicon-triangle-bottom {
 }
 
 .study2 {
-    padding: 2em 0 0;
+    padding: 2.5em 0 0;
 }
 
 .service-section {
