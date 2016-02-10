@@ -7,12 +7,12 @@ var experienceTemplate = function (id, title, company, experiences, open) {
         '               <li>' +
         '                   <div>' +
         '                       <a role="button" data-toggle="collapse" data-parent="#experience-accordion"href="#collapse' + id + '" aria-expanded="true" aria-controls="collapse' + id + '">' +
-        '    ' + title + '</a>' +
+        '    ' + title + '<div class="experience-abridged company"> - ' + company + '</div></a>' +
         '                   </div>' +
         '               </li>' +
         '           </div>' +
-        '           <div class="col-md-4 col-sm-3">' +
-        '               <p class="company">' + company + '</p>' +
+        '           <div class="col-md-4 col-sm-3 experience-full">' +
+        '               <div class="company">' + company + '</div>' +
         '           </div>' +
         '       </div>' +
         '   </div>' +

@@ -245,6 +245,14 @@ span.glyphicon.glyphicon-triangle-bottom {
     line-height: 1.8em;
 }
 
+.study-grid .experience-abridged {
+    display: none;
+}
+
+.study-grid .experience-full {
+    display: inherit;
+}
+
 span.glyphicon.glyphicon-pencil {
     font-size: 2em;
     color: #C6D9C7;
@@ -508,7 +516,7 @@ i.beh {
         font-size: 2em;
     }
 
-    .study-grid p, .study-grid ul li {
+    .study-grid p, .study-grid ul li, .study-grid .company {
         font-size: 1.1em;
     }
 
@@ -520,9 +528,13 @@ i.beh {
         font-size: 1.3em;
         text-align: center;
     }
-    .study-grid label {
+    .study-grid p {
         text-align: center;
-        display: block;
+    }
+
+    .study-grid p.company {
+        text-align: left;
+        display: inline;
     }
 
     .service-grid h4 {
@@ -578,6 +590,14 @@ i.beh {
 }
 
 @media only screen and (max-width: 768px) {
+    .study-grid .experience-abridged {
+        display: inherit;
+    }
+
+    .study-grid .experience-full {
+        display: none;
+    }
+
     .header-section {
         min-height: 472px;
     }
@@ -607,7 +627,7 @@ i.beh {
         font-size: 1.6em;
     }
 
-    .study-grid p, .study-grid ul li {
+    .study-grid p, .study-grid ul li, .study-grid .company {
         font-size: 1em;
         padding: 1.2em 0 0 0;
     }
@@ -757,7 +777,7 @@ i.beh {
         padding: 1em 0 0;
     }
 
-    .study-grid p, .study-grid ul li {
+    .study-grid p, .study-grid ul li, .study-grid .company {
         font-size: 0.965em;
         padding: 1.2em 0 0 0;
     }
@@ -859,7 +879,7 @@ i.beh {
         padding: 0;
     }
 
-    .study-grid p, .study-grid ul li {
+    .study-grid p, .study-grid ul li, .study-grid .company {
         font-size: 0.92em;
     }
 
@@ -967,7 +987,7 @@ i.beh {
         padding: 0em 0;
     }
 
-    .study-grid p, .study-grid ul li {
+    .study-grid p, .study-grid ul li, .study-grid .company {
         font-size: 0.9em;
     }
 
