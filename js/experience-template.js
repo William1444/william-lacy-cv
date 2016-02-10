@@ -34,7 +34,7 @@ var experienceTemplate = function (id, title, company, experiences, open) {
         '   </div>' +
         '</div>'
 };
-var jsFullstackPostOffice = experienceTemplate(1, 'Lead JavaScript Fullstack Developer', 'The Post Office',[
+var jsFullstackPostOffice = experienceTemplate(1, 'Lead JavaScript Fullstack Developer', 'Post Office',[
     'Set up the project for success with build infrastructure that scaled to build, test, deploy and promote ' +
     'over 60 JavaScript fullstack applications to production',
 

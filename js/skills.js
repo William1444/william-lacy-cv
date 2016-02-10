@@ -3,10 +3,10 @@ function skill(skill, products, percentage, progressClazz) {
         '<div>' +
 
         '   <div class="row skill-full">' +
-        '       <div class="col-lg-4 col-md-4 col-sm-12">' +
+        '       <div class="col-lg-4 col-md-3 col-sm-12">' +
         '           <h4>' + skill + '</h4>' +
         '      </div> ' +
-        '       <div class="col-lg-8 col-md-8 col-sm-12">' +
+        '       <div class="col-lg-8 col-md-9 col-sm-12">' +
         '           <label style="padding-top: 0.9em">' + products + '</label>' +
         '      </div>' +
         '   </div>' +

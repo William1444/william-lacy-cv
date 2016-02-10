@@ -541,6 +541,9 @@ i.beh {
         font-size: 1.3em;
         text-align: center;
     }
+    .study-grid .skill-full h4 {
+        text-align: left;
+    }
     .study-grid p {
         text-align: center;
     }
