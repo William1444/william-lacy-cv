@@ -3,10 +3,10 @@ function skill(skill, products, percentage, progressClazz) {
         '<div>' +
 
         '   <div class="row skill-full">' +
-        '       <div class="col-lg-5 col-md-5 col-sm-12">' +
+        '       <div class="col-lg-4 col-md-4 col-sm-12">' +
         '           <h4>' + skill + '</h4>' +
         '      </div> ' +
-        '       <div class="col-lg-7 col-md-7 col-sm-12">' +
+        '       <div class="col-lg-8 col-md-8 col-sm-12">' +
         '           <label style="padding-top: 0.9em">' + products + '</label>' +
         '      </div>' +
         '   </div>' +
@@ -22,9 +22,10 @@ function skill(skill, products, percentage, progressClazz) {
 var skillsEl = document.currentScript.parentNode;
 
 $(skillsEl).append([
-    skill('REST','',65, 'progress-bar-3'),
-    skill('js', 'AngularJS, Node.js, Express', 85, 'progress-bar-4'),
-    skill('Continuous Integration','Docker, Linux, Puppet, Jenkins, Bluemix',85, 'progress-bar-1'),
+    skill('js', 'AngularJS, Node.js, Express, REST', 85, 'progress-bar-3'),
+    skill('HTML/CSS','HTML5, HTML5 Messaging, Less, Sass',65, 'progress-bar-1'),
+
+    skill('DevOps','Docker, Linux, Puppet, Jenkins, JMeter, Bluemix',85, 'progress-bar-4'),
     skill('NoSql','mongodb, cloudant, couchdb',60, 'progress-bar-2'),
-    skill('Java','spring, hibernate, jersey',58, 'progress-bar-5')
+    skill('Java','spring, hibernate, jersey, maven, SQL',58, 'progress-bar-5')
 ]);
