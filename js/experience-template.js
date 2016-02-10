@@ -3,16 +3,16 @@ var experienceTemplate = function (id, title, company, experiences, open) {
         '<div class="panel">' +
         '   <div role="tab" id="heading' + id + '">' +
         '       <div class="row">' +
-        '           <div class="col-md-8">' +
+        '           <div class="col-md-8 col-sm-9">' +
         '               <li>' +
-        '                   <div class="panel-title">' +
+        '                   <div>' +
         '                       <a role="button" data-toggle="collapse" data-parent="#experience-accordion"href="#collapse' + id + '" aria-expanded="true" aria-controls="collapse' + id + '">' +
         '    ' + title + '</a>' +
         '                   </div>' +
         '               </li>' +
         '           </div>' +
-        '           <div class="col-md-4">' +
-        '               <div class="company">' + company + '</div>' +
+        '           <div class="col-md-4 col-sm-3">' +
+        '               <p class="company">' + company + '</p>' +
         '           </div>' +
         '       </div>' +
         '   </div>' +
