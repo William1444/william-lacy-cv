@@ -22,7 +22,7 @@ function skill(skill, products, percentage, progressClazz) {
 var skillsEl = document.currentScript.parentNode;
 
 $(skillsEl).append([
-    skill('js', 'AngularJS, Node.js, Express, REST', 84, 'progress-bar-3'),
+    skill('JS', 'AngularJS, Node.js, Express, REST', 84, 'progress-bar-3'),
     skill('HTML/CSS','HTML5, HTML5 Messaging, Less, Sass',58, 'progress-bar-1'),
 
     skill('DevOps','Docker, Linux, Puppet, Jenkins, JMeter, Bluemix, git',86, 'progress-bar-4'),
