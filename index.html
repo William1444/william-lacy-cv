@@ -156,16 +156,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="contact-details">
             <form>
                 <div class="col-md-6 contact-left">
-                    <input type="text" class="text" value="Name *" onfocus="this.value = '';"
+                    <input type="text" class="text" value="Name *" onfocus="this.value = this.value === 'Name *' ? '' : this.value"
                            onblur="if (this.value == '') {this.value = 'Name *';}">
-                    <input type="text" class="text" value="Email *" onfocus="this.value = '';"
+                    <input type="text" class="text" value="Email *" onfocus="this.value = this.value === 'Email *' ? '' : this.value"
                            onblur="if (this.value == '') {this.value = 'Email *';}">
-                    <input type="text" class="text" value="phone *" onfocus="this.value = '';"
+                    <input type="text" class="text" value="Phone *" onfocus="this.value = this.value === 'phone *' ? '' : this.value"
                            onblur="if (this.value == '') {this.value = 'Phone *';}">
                 </div>
                 <div class="col-md-6 contact-right">
-                    <textarea value="Message" onfocus="this.value = '';"
-                              onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
+                    <textarea value="Message *" onfocus="this.value = this.value == 'Message *' ? '' : this.value"
+                              onblur="if (this.value == '') {this.value = 'Message *';}">Message *</textarea>
                     <input type="submit" value="Send Message"/>
                 </div>
                 <div class="clearfix"></div>
