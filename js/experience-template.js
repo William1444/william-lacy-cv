@@ -44,22 +44,22 @@ var jsFullstackPostOffice = experienceTemplate(1, 'Lead JavaScript Fullstack Dev
     'and sharing common UI, Server and Build componentry. It is estimated that new products will be ' +
     'delivered in 25% of the time'
 ],true);
-var visaUiDevOps = experienceTemplate(2, 'UI Developer / DevOps Engineer', 'Visa',[
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ' +
-    'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
-    'aliquip ex ea commodo consequat. Duis aute irure dolor in',
-    'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
-    'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+var otherTrainingEtc = experienceTemplate(2, 'DevOps Expert and Trainer', 'Visa & Internally',[
+    'Delivered the internal IBM DevOps technical workshop, encouraging participants to invest in open source.',
+    'Automated performance test and analysis in the development pipeline with bespoke written Maven and Jenkins plugins, ' +
+    'published in this <a href="http://www.ibm.com/developerworks/rational/library/agile-lifecycle-performance-engineering/">DevelopWorks article</a>',
+    'Developed a Rational Team Concert plugin to streamline the CI promotion process, published in this ' +
+    '<a href="http://www.ibm.com/developerworks/library/d-extend-customize-rational-team-concert-continuous-integration/index.html">DevelopWorks article</a>.'
 ]);
-var javaDeveloperAndDevOpsEngineer = experienceTemplate(3, 'Java Developer / DevOps Engineer', 'IKEA',[
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ' +
-    'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
-    'aliquip ex ea commodo consequat. Duis aute irure dolor in',
-    'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
-    'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+var visaUiDevOps = experienceTemplate(3, 'Fullstack Java / JavaScript Developer', 'Visa & IKEA',[
+    'Rapidly developed prototype MEAN apps for bid and exploritory work.',
+    'Developed hotfixes for sev 1 production defects out of hours as the dedicated on call UI SME.',
+    'Created Java REST services using Spring, Jersey and Oracle ATG.'
 ]);
+
 var accordionNode = document.currentScript.parentNode;
-$(accordionNode).append([jsFullstackPostOffice,visaUiDevOps,javaDeveloperAndDevOpsEngineer]);
+$(accordionNode).append([jsFullstackPostOffice,otherTrainingEtc,visaUiDevOps]);
 
 $(document).ready(function() {
     $(accordionNode).find('[aria-controls=collapse1]').trigger('click');
