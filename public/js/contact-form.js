@@ -1,11 +1,11 @@
 var form = '<form id="contactForm" action="/contact" method="post">' +
     '           <div class="col-md-6 contact-left">' +
-    '               <input name="name" required="required" type="text" class="text" value="Name *" onfocus="this.value = this.value === \'Name *\' ? \'\' : this.value" onblur="if (this.value == \'\') {this.value = \'Name *\';}">' +
-    '               <input name="email" required="required" type="email" class="text" value="Email *" onfocus="this.value = this.value === \'Email *\' ? \'\' : this.value" onblur="if (this.value == \'\') {this.value = \'Email *\';}">' +
-    '               <input name="phone" required="required" type="tel" class="text" value="Phone *" onfocus="this.value = this.value === \'Phone *\' ? \'\' : this.value" onblur="if (this.value == \'\') {this.value = \'Phone *\';}">' +
+    '               <input name="name" placeholder="Name *" required="required" type="text" class="text">' +
+    '               <input name="email" placeholder="Email *" required="required" type="email" class="text">' +
+    '               <input name="phone" placeholder="Phone *" required="required" type="tel" class="text">' +
     '           </div>' +
     '           <div class="col-md-6 contact-right">' +
-    '               <textarea name="message" value="Message *" onfocus="this.value = this.value == \'Message *\' ? \'\' : this.value" onblur="if (this.value == \'\') {this.value = \'Message *\';}">Message *</textarea>' +
+    '               <textarea name="message" placeholder="Message *" required="required" maxlength="1000" ></textarea>' +
     '<span class="success-msg">Thanks! I\'ll be in touch</span>' +
     '               <button class="btn-success has-spinner btn">' +
     '                   <span class="spinner"><i class="glyphicon glyphicon-refresh glyphicon-spin"></i></span>Submit' +

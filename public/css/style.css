@@ -402,6 +402,24 @@ i.google {
     margin: 0 10px;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #Aac8ac;
+}
+input:-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #Aac8ac;
+    opacity:  1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #Aac8ac;
+    opacity:  1;
+}
+input:-ms-input-placeholder, textarea::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #Aac8ac;
+}
+input:placeholder-shown, textarea:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+    color:    #Aac8ac;
+}
+
 i.beh {
     width: 64px;
     height: 64px;
@@ -433,7 +451,7 @@ i.beh {
     border: 1px solid #7ca17f;
     font-size: 1.1em;
     margin-bottom: 1.2em;
-    color: #Aac8ac;
+    color: #81a684;
     outline: none;
     background: transparent;
     font-weight: 600;
