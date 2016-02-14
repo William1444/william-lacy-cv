@@ -23,14 +23,18 @@ app.post('/contact',function(req,res,next){
         subject: 'Contact', // Subject line
         text: b.message + ' - ' + b.phone
     };
-    transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            return console.log(error);
-            res.send('error');
-        }
-        console.log('Message sent: ' + info.response);
+    setTimeout(function(){
+        console.info('asd')
         res.send('sent');
-    });
+    },1000)
+    //transporter.sendMail(mailOptions, function(error, info){
+    //    if(error){
+    //        res.send('error');
+    //        return console.log(error);
+    //    }
+    //    console.log('Message sent: ' + info.response);
+    //    res.send('sent');
+    //});
 });
 
 app.listen(3000,function(){

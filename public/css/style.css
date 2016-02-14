@@ -198,27 +198,22 @@ span.glyphicon.glyphicon-triangle-bottom {
 }
 
 .progress-bar.progress-bar-1 {
-    /*background-color: #78B3AE;*/
-    background-color: #6CCCD5;/*6FBCB6 6FBCB6 6FBCB6 00C1B3 32ADA4*/
+    background-color: #6CCCD5;
 }
 
 .progress-bar.progress-bar-2 {
-    /*background-color: #8C9D82;*/
     background-color: #7A94DC;
 }
 
 .progress-bar.progress-bar-3 {
-    /*background-color: #DEECDF;*/
     background-color: #FFD479;
 }
 
 .progress-bar.progress-bar-4 {
-    /*background-color: #ACB5B8;*/
     background-color: #6DE77C;
 }
 
 .progress-bar.progress-bar-5 {
-    /*background-color: #93BCBE;*/
     background-color: #32ADA4;
 }
 
@@ -425,7 +420,7 @@ i.beh {
 
 }
 
-.contact-details form input[type="text"], .contact-details form textarea {
+.contact-details form input[type="text"],.contact-details form input[type="email"], .contact-details form textarea {
     width: 100%;
     padding: 1.5em 1em;
     border: 1px solid #7ca17f;
@@ -447,26 +442,78 @@ i.beh {
     text-align: right;
 }
 
-.contact-details input[type="submit"] {
-    background: #393b3a;
-    padding: 1em 2em;
-    border: none;
-    font-size: 1em;
-    margin: 0.5em 0 0 0;
-    color: #fff;
-    outline: none;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
+.spinner {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+
+    -webkit-transition: opacity 0.25s, width 0.25s;
+    -moz-transition: opacity 0.25s, width 0.25s;
+    -o-transition: opacity 0.25s, width 0.25s;
+    transition: opacity 0.25s, width 0.25s;
 }
 
-.contact-details input[type="submit"]:hover {
-    color: #fff;
-    background: rgb(0, 207, 189);
+.has-spinner.active {
+    cursor:progress;
+}
+
+.has-spinner.active .spinner {
+    opacity: 1;
+    width: auto; /* This doesn't work, just fix for unkown width elements */
+}
+
+.glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+
+.contact-details .success-msg {
+    display: none;
+    margin-right: 1em;
+}
+
+input:disabled, textarea:disabled {
+    opacity: 0.8;
+    cursor: default;
+}
+
+.contact-details form.success .success-msg {
+    display: inline;
+}
+
+.contact-details button.btn, .contact-details button.btn:disabled, .contact-details button.btn:active,
+.contact-details button.btn-success:disabled,
+.contact-details button.btn-success.active:disabled,
+.contact-details button.btn-success:hover {
+    border-color: #32ADA4;
+    background-color: #32ADA4;
+}
+
+.contact-details button.btn-success:disabled {
+    opacity: 0.4;
+}
+
+.contact-details button.btn-success.active:disabled {
+    opacity: 0.6;
+}
+
+.contact-details button.btn-success:hover {
+    opacity: 0.8;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.glyphicon.glyphicon-spin {
+    margin-right: 10px
 }
 
 .google-map {
