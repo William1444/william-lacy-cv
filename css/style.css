@@ -306,9 +306,18 @@ span.glyphicon.glyphicon-signal {
     opacity: 0.8;
 }
 
-.social-icons {
+.social-icons img, .social-icons a {
     background: #fff;
-    padding: 4em 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 4em;
+}
+
+.social-icons a {
+    display: table;
 
 }
 
@@ -319,6 +328,7 @@ span.glyphicon.glyphicon-signal {
     color: #393b3a;
     text-align: center;
     margin-bottom: 2em;
+    margin-top: 2em
 }
 
 h3 span {
@@ -350,6 +360,15 @@ h3 span {
     margin-top: 1.2em;
     cursor: pointer;
     text-align: center;
+}
+
+i.linkedin {
+    background: url(../images/social-sprite.png) no-repeat -336px 0px;
+    width: 84px;
+    height: 84px;
+    float: left;
+    vertical-align: middle;
+    margin: 0 10px;
 }
 
 i.facebook {
@@ -524,6 +543,10 @@ i.beh {
 }
 @media only screen and (max-width: 1024px) {
 
+    .service-section {
+        padding-top: 0;
+    }
+
     .study1 {
         padding: 0 0 3.5em 0
     }
@@ -613,6 +636,9 @@ i.beh {
 }
 
 @media only screen and (max-width: 991px) {
+    .service-section {
+        padding-top: 2.4em;
+    }
     .study-grid .skill-full {
         display: none;
     }
@@ -623,6 +649,9 @@ i.beh {
 }
 
 @media only screen and (max-width: 768px) {
+    h3 {
+        text-align: center;
+    }
     .study-grid .experience-abridged {
         display: inherit;
     }
@@ -683,17 +712,13 @@ i.beh {
     }
 
     .social-icons {
-        padding: 3em 0;
+        padding: 0;
     }
 
     .social-icons h3 {
         font-size: 1.6em;
-        margin-bottom: 1.5em;
-    }
-
-    .face {
-        float: left;
-        width: 25%;
+        margin-bottom: 2.0em;
+        margin-top: 1.4em;
     }
 
     .face p {
@@ -745,6 +770,7 @@ i.beh {
         font-size: 1.6em;
         margin-bottom: 1.5em;
     }
+
 
     .contact-details form input[type="text"], .contact-details form textarea {
         padding: 1em 1em;
@@ -867,6 +893,9 @@ i.beh {
 }
 
 @media only screen and (max-width: 480px) {
+    .social-icons h3 {
+        margin-top: 1em;
+    }
     .header-section img {
         margin-top: 5em;
         width: 30%;
@@ -936,7 +965,7 @@ i.beh {
     }
 
     .social-icons {
-        padding: 2em 0;
+        padding: 0;
     }
 
     .contact-section {
