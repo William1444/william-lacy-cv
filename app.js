@@ -14,8 +14,7 @@ app.use('/bower_components',express.static('bower_components'));
 var nodemailer = require('nodemailer');
 
 // create reusable transporter object using the default SMTP transport
-console.error(process.env.ADMIN_EMAIL_PASS)
-var transporter = nodemailer.createTransport('smtps://williamlacycvsite%40gmail.com:' + process.env.ADMIN_EMAIL_PASS +'@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://'+ process.env.ADMIN_EMAIL_ADDRESS + ':' + process.env.ADMIN_EMAIL_PASS +'@' + (process.env.SMTP_SERVER || 'smtp.gmail.com'));
 
 app.post('/contact',function(req,res,next){
     var b = req.body;
