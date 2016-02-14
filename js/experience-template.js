@@ -41,8 +41,7 @@ var jsFullstackPostOffice = experienceTemplate(1, 'Lead JavaScript Fullstack Dev
     'Provided technical governance to 8 global teams to ensure code quality, scalability and resilience',
 
     'Infected a ‘reuse before use’ culture, by creating a self sustained contribution model for creating ' +
-    'and sharing common UI, Server and Build componentry. It is estimated that new products will be ' +
-    'delivered in 25% of the time'
+    'and sharing common UI, Server and Build componentry. 75% estimated reduction in delivery time.'
 ],true);
 var otherTrainingEtc = experienceTemplate(2, 'DevOps Expert and Trainer', 'Visa & Internally',[
     'Delivered the internal IBM DevOps technical workshop, encouraging participants to invest in open source.',

@@ -3,15 +3,15 @@ function skill(skill, products, percentage, progressClazz) {
         '<div>' +
 
         '   <div class="row skill-full">' +
-        '       <div class="col-lg-4 col-md-3 col-sm-12">' +
-        '           <h4>' + skill + '</h4>' +
+        '       <div class="col-lg-3 col-md-2 col-sm-12">' +
+        '           <p class="section-heading">' + skill + '</p>' +
         '      </div> ' +
-        '       <div class="col-lg-8 col-md-9 col-sm-12">' +
-        '           <label style="padding-top: 0.9em">' + products + '</label>' +
+        '       <div class="col-lg-9 col-md-10 col-sm-12">' +
+        '           <label class="products">' + products + '</label>' +
         '      </div>' +
         '   </div>' +
 
-        '       <h4 class="skill-abridged">' + skill + ' <span class="products" style="padding-top: 0.9em">' + products + '</span></h4>' +
+        '       <p class="skill-abridged">' + skill + ' <span class="products">' + products + '</span></p>' +
 
         '   <div class="progress">' +
         '       <div class="progress-bar ' + progressClazz + '" role="progressbar" aria-valuenow="' + percentage + '" aria-valuemin="0" aria-valuemax="100" style="width: ' + percentage + '%">' +

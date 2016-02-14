@@ -121,7 +121,8 @@ span.glyphicon.glyphicon-triangle-bottom {
     font-size: 1.2em;
     color: #989998;
     display: block;
-    padding-top: 1.1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     padding-left: 1.6em;
 }
 .study-grid ul li a {
@@ -169,11 +170,20 @@ span.glyphicon.glyphicon-triangle-bottom {
     opacity: 0.8;
 }
 
-.study-grid label, .study-grid .products {
-    font-size: 1.0em;
-    padding-top: 0.6em;
+.study-grid label, .study-grid .products, .study-grid .company {
+    font-size: 0.9em;
+    padding-top: 0.9em;
     color: #84c0bb;
     margin: 0 0 0 7px;
+}
+
+.study-grid .products {
+    font-size: 1.0em;
+    padding-top: 1.4em;
+}
+
+.study-grid .products {
+    padding-left: 0.6em;
 }
 
 .progress {
@@ -222,9 +232,16 @@ span.glyphicon.glyphicon-triangle-bottom {
 .study1 {
     padding: 1em 0 0;
 }
+.study-grid .study1 p.section-heading {
+    font-size: 1.2em;
+}
 
 .study2 {
     padding: 2.5em 0 0;
+}
+
+.study-grid p.section-heading {
+    font-size: 1.1em;
 }
 
 .service-section {
@@ -634,11 +651,6 @@ i.beh {
         padding: 3em 0 0 0;
     }
 
-    .study-grid {
-        /*float: left;*/
-        /*width: 50%;*/
-    }
-
     .study-grid h3 {
         font-size: 1.6em;
     }
@@ -732,16 +744,6 @@ i.beh {
     .contact-section h3 {
         font-size: 1.6em;
         margin-bottom: 1.5em;
-    }
-
-    .contact-left {
-        float: left;
-        width: 50%;
-    }
-
-    .contact-right {
-        float: left;
-        width: 50%;
     }
 
     .contact-details form input[type="text"], .contact-details form textarea {
