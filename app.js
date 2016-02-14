@@ -17,24 +17,37 @@ app.post('/contact',function(req,res,next){
     var b = req.body;
     console.info('contact received');
     console.info(b);
-    var mailOptions = {
+    var mailOptionsAdmin = {
         from: b.name + ' <' + b.email + '>', // sender address
         to: 'williamlacycvsite@gmail.com', // list of receivers
         subject: 'Contact', // Subject line
-        text: b.message + ' - ' + b.phone
+        text: b.message + '\n\n' + b.email + '\n\n' + b.phone
     };
-    setTimeout(function(){
-        console.info('asd')
-        res.send('sent');
-    },1000)
-    //transporter.sendMail(mailOptions, function(error, info){
-    //    if(error){
-    //        res.send('error');
-    //        return console.log(error);
-    //    }
-    //    console.log('Message sent: ' + info.response);
-    //    res.send('sent');
-    //});
+    var mailOptionsRequestNotification = {
+        from: 'William Lacy <contact@williamlacy.uk>', // sender address
+        to: b.email, // list of receivers
+        subject: '[NO-REPLY] Thank you for your interest!', // Subject line
+        text: 'Hi\n \n This is an automated reply but don\'t let that put you off!\n\nI\'ll be in touch soon!\n\nMany thanks\n\nWilliam Lacy'
+    };
+
+    transporter.sendMail(mailOptionsRequestNotification, function(error, info){
+        if(error){
+            res.status(500).send('error');
+            console.log('Confirmation message failed');
+            return console.error(error);
+        }
+        console.log('Confirmation message sent: ' + info.response);
+        transporter.sendMail(mailOptionsAdmin, function(error, info){
+            if(error){
+                res.status(500).send('error');
+                console.error('Failed to send Admin message');
+                return console.error(error);
+            }
+            console.log('Admin message sent: ' + info.response);
+            res.status(200).send('success');
+            return res.status(200).send('success');
+        });
+    });
 });
 
 app.listen(3000,function(){
