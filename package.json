@@ -1,0 +1,25 @@
+{
+  "name": "william-lacy-cv",
+  "version": "1.0.0",
+  "description": "install node & npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William1444/william-lacy-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/William1444/william-lacy-cv/issues"
+  },
+  "homepage": "https://github.com/William1444/william-lacy-cv#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-json": "^1.0.0",
+    "nodemailer": "^2.1.0"
+  }
+}
