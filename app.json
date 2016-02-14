@@ -1,0 +1,8 @@
+{
+  "name": "William Lacy CV",
+  "description": "My CV hosted on a simple nodeapp",
+  "repository": "https://github.com/William1444/william-lacy-cv.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
