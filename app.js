@@ -35,9 +35,9 @@ app.post('/contact',function(req,res,next){
 
     transporter.sendMail(mailOptionsRequestNotification, function(error, info){
         if(error){
-            res.status(500).send('error');
-            console.log('Confirmation message failed');
-            return console.error(error);
+            console.error('Confirmation message failed');
+            console.error(error);
+            return res.status(500).send('error');
         }
         console.log('Confirmation message sent: ' + info.response);
         transporter.sendMail(mailOptionsAdmin, function(error, info){
@@ -47,7 +47,6 @@ app.post('/contact',function(req,res,next){
                 return console.error(error);
             }
             console.log('Admin message sent: ' + info.response);
-            res.status(200).send('success');
             return res.status(200).send('success');
         });
     });
