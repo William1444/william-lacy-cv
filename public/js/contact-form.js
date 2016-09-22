@@ -7,7 +7,7 @@ var form = '<form id="contactForm" action="/contact" method="post">' +
     '           <div class="col-md-6 contact-right">' +
     '               <textarea name="message" placeholder="Message *" required="required" maxlength="1000" ></textarea>' +
     '<span class="success-msg">Thanks! I\'ll be in touch</span>' +
-    '               <button class="btn-success has-spinner btn">' +
+    '               <button class="btn-success has-spinner btn-lg btn">' +
     '                   <span class="spinner"><i class="glyphicon glyphicon-refresh glyphicon-spin"></i></span>Submit' +
     '               </button>' +
     '           </div>' +
