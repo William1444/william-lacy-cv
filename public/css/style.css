@@ -676,10 +676,11 @@ input:disabled, textarea:disabled {
 
     .service-grid h4 {
         font-size: 20px;
+        padding-top: 20px;
     }
 
     .service-grid p {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .social-icons h3 {
@@ -728,6 +729,10 @@ input:disabled, textarea:disabled {
         font-size: 22px;
     }
 
+    .service-grid {
+        padding-top: 60px;
+    }
+
     .service-section {
         padding-top: 2.4em;
     }
@@ -738,6 +743,10 @@ input:disabled, textarea:disabled {
 
     .study-grid .skill-abridged, .study-grid .progress {
         display: block;
+    }
+
+    .study-grid.skills {
+        padding-top: 30px;
     }
 }
 
@@ -786,11 +795,6 @@ input:disabled, textarea:disabled {
     .service-section {
         text-align: center;
         padding: 3em 0;
-    }
-
-    .service-grid {
-        float: left;
-        width: 33.3%;
     }
 
     .service-grid h4 {
